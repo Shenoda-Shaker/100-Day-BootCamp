@@ -24,6 +24,13 @@
 # length = len(user_name)
 # print(user_name , "and the length of ch is:",length)
 
-user_name = input ("What is your name? ")
-length =  "and the length of the character is " + str(len(user_name))
-print(user_name, length)
+# user_name = input ("What is your name? ")
+# length =  "and the length of the character is " + str(len(user_name))
+# print(user_name, length)
+
+# -------------------------- Code Assignment --------------------------
+
+# glass1 = input ("please enter your favorite drink 1: ")
+# glass2 = input ("please enter your favorite drink 2: ")
+#
+# print("your drinks is: " + glass1 + " " + glass2)
