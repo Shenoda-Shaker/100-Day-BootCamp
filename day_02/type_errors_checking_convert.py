@@ -29,3 +29,5 @@ print ("Number of letters in your name: " + str( len(input("Enter the name: ")))
 name_of_user = input("Enter your name: ")
 length = (len(name_of_user))
 print ("Number of letters in your name: " + str(length))
+
+
