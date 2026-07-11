@@ -7,6 +7,6 @@
 
 height = float(input("What is the height in centimeters? "))
 if height > 120:
-    print(f"yor height is : ({height}) so you can ride")
+    print(f"your height is : ({height}) so you can ride")
 else:
-    print(f"yor height is :({height}) so you can't ride")
+    print(f"your height is :({height}) so you can't ride")
