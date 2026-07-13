@@ -20,9 +20,14 @@
 
 # Even or Odd Number challenge:
 
-is_number = int(input("Please enter the number: "))
-if is_number % 2 == 0:
-    print(f"The number you had enter is {is_number} is EVEN, because the reminder is {is_number % 2}")
-else:
-    print(f"The number you had enter is {is_number} is ODD, because the reminder is {is_number % 2}")
 
+# The Purpose of script to get a number from user to tell EVEN or ODD Number:
+
+user_input = int(input("Enter a number: "))
+
+remainder = user_input % 2
+
+if remainder == 0:
+    print(f"The number you entered is... ({user_input}) is EVEN because the remainder is {remainder} ")
+else:
+    print(f"The number you entered is... ({user_input}) is ODD because the remainder is {remainder} ")
