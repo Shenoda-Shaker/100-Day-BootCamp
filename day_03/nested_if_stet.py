@@ -35,7 +35,7 @@
 #             print(f"your total ticket is $ {adult+photo}")
 #         else:
 #             print(f"You pay $ {adult}")
-#     elif 12 <= player_age < 18:
+#     elif player_age >= 12:
 #         take_photo = input("Do you want to take a photo? (y/n): ")
 #         if take_photo == "y":
 #             print(f"your total ticket is $ {teenager + photo}")
@@ -54,31 +54,31 @@
 
 # ------------------------------- RollerCoaster game check + price + photo ( DRY ): -------------------------------
 
-# adult = 12
-# teen_age = 7
-# child = 5
-# photo = 3
-#
-# player_height = int(input("Please enter your height in CM: "))
-# if player_height >= 120:
-#     print ("Yes! you can play")
-#
-#     player_age = int(input("Please enter your age: "))
-#     if player_age >=18:
-#         ticket_price = adult
-#     elif 12 <= player_age < 18:
-#         ticket_price = teen_age
-#     else:
-#         ticket_price = child
-#
-#     take_photo = input("would you like to take a photo? y/n: ")
-#     if take_photo == "y":
-#         ticket_price += photo
-#     print(f"your total price is ${ticket_price}")
-#
-#
-# else:
-#     print("Sorry! you can't play")
+ADULT_PRICE = 12
+TEEN_PRICE = 7
+CHILD_PRICE = 5
+PHOTO_PRICE = 3
+
+player_height = int(input("Please enter your height in CM: "))
+if player_height >= 120:
+    print ("Yes! you can play")
+
+    player_age = int(input("Please enter your age: "))
+    if player_age >=18:
+        ticket_price = ADULT_PRICE
+    elif player_age >= 12:
+        ticket_price = TEEN_PRICE
+    else:
+        ticket_price = CHILD_PRICE
+
+    take_photo = input("Would you like to take a photo? y for YES / n for NO: ")
+    if take_photo == "y":
+        ticket_price += PHOTO_PRICE
+    print(f"your total price is ${ticket_price}")
+
+
+else:
+    print("Sorry! you can't play")
 #
 # # ------------------------------- RollerCoaster game check + price + photo ( Another solution ): -------------------------------
 #
